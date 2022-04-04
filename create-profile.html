@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial_scale=1">
+    <title>Create a profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <h1>Parachute</h1>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a class="nav-item" href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="service.html">SERVICE</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="home-area">
+            <h1 class="CP-heading">Create a profile</h1>
+        </div>
+        
+        <div class="container">
+            <form class="info-form">
+                <div class="basic-info box">
+                    <h2>Personal Information</h2>
+                    <div class="input-box">
+                        <lable>Firstname:</lable>
+                        <input type="text" name="firstname" required>
+                    </div>
+                    <div class="input-box">
+                        <lable>Lastname:</lable>
+                        <input type="text" name="lastname" required>
+                    </div>
+                    <div class="input-box">
+                        <lable>Username:</lable>
+                        <input type="text" name="username" required>
+                    </div>
+                    <div class="input-box">
+                        <lable>Password:</lable>
+                        <input type="password" name="password" required>
+                    </div>
+                    <div class="input-box">
+                        <lable>Confirm Password:</lable>
+                        <input type="password" name="confirm_password" required>
+                    </div>
+                    <div class="input-box">
+                        <lable>Birthday:</lable>
+                        <input type="date" name="birthday" required>
+                    </div>
+                    <div class="input-box">
+                        <lable>Country:</lable>
+                        <input type="text" name="country" required>
+                    </div>
+                    <div class="input-box">
+                        <lable>Highest Education Level:</lable>
+                        <input type="text" name="edu-level" required>
+                    </div>
+                    <div class="input-box">
+                        <lable>Annual Income:</lable>
+                        <input type="text" name="income" required>
+                    </div>
+                </div>
+                <div class="financial-info box">
+                    <h2>Financial Information</h2>
+                    <div class="amount-div">
+                        <p>What is the amount you would like to invest?</p>
+                        <br>
+                        <div class="amnt-blocker">
+                            <input class="10k" type="radio" id="amount1" name="amount" required>
+                            <label for="amount1">$10,000</label>
+                        </div>
+                        <div class="amnt-blocker">
+                            <input class="15k" type="radio" id="amount2" name="amount">
+                            <label for="amount2">$15,000</label>
+                        </div>
+                        <div class="amnt-blocker">
+                            <input class="20k" type="radio" id="amount3" name="amount">
+                            <label for="amount3">$20,000</label>
+                        </div>
+                        <div class="amnt-blocker">
+                            <input class="50k" type="radio" id="amount4" name="amount">
+                            <label for="amount4">$50,000</label>
+                        </div>
+                        <div class="amnt-blocker">
+                            <input class="100k" type="radio" id="amount5" name="amount">
+                            <label for="amount5">$100,000</label>
+                        </div>
+                        <div class="amnt-blocker">
+                            <input class="other-amnt" type="radio" id="amount6" name="amount">
+                            <label for="amount6">Other: $</label>
+                            <input class="other-amnt" type="text" id="amount7" name="amount">
+                        </div>
+
+
+
+                    </div>
+                    <div class="asset-percentage-question">
+                        <p>How would you like to allocate your assets?</p>
+                        <div class="aa-input">
+                            <label>Stocks:</label>
+                            <input type="text" name="stocks" required placeholder="Percentage of total assets">
+                            <lable>%</lable>
+                        </div>
+                        <div class="aa-input">
+                            <label>Bonds:</label>
+                            <input type="text" name="bonds" required placeholder="Percentage of total assets">
+                            <lable>%</lable>
+                        </div>
+                        <div class="aa-input">
+                            <label>Cash:</label>
+                            <input type="text" name="cash" required placeholder="Percentage of total assets">
+                            <lable>%</lable>
+                        </div>
+                    </div>
+
+                    <div class="stocks-to-invest">
+                        <p>Select the stocks you are interested in:</p>
+                        <div class="stock-option">
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="GOOG-cb" name="GOOG-cb">
+                                <label for="GOOG-cb">GOOG</label>
+                                
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="AAPL-cb" name="AAPL-cb">
+                                <label for="AAPL-cb">AAPL</label>
+                                
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="FB-cb" name="FB-cb">
+                                <label for="FB-cb">FB</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="BABA-cb" name="BABA-cb">
+                                <label for="BABA-cb">BABA</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="AMZN-cb" name="AMZN-cb">
+                                <label for="AMZN-cb">AMZN</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="GE-cb" name="GE-cb">
+                                <label for="GE-cb">GE</label>
+                            </div>   
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="AMD-cb" name="AMD-cb">
+                                <label for="AMD-cb">AMD</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="WMT-cb" name="WMT-cb">
+                                <label for="WMT-cb">WMT</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="BAC-cb" name="BAC-cb">
+                                <label for="BAC-cb">BAC</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="GM-cb" name="GM-cb">
+                                <label for="GM-cb">GM</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="T-cb" name="T-cb">
+                                <label for="T-cb">T</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="UAA-cb" name="UAA-cb">
+                                <label for="UAA-cb">UAA</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="XOM-cb" name="XOM-cb">
+                                <label for="XOM-cb">XOM</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="RRC-cb" name="RRC-cb">
+                                <label for="RRC-cb">RRC</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="BBY-cb" name="BBY-cb">
+                                <label for="BBY-cb">BBY</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="MA-cb" name="MA-cb">
+                                <label for="MA-cb">MA</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="PFE-cb" name="PFE-cb">
+                                <label for="PFE-cb">PFE</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="JPM-cb" name="JPM-cb">
+                                <label for="JPM-cb">JPM</label>
+                            </div>
+                            <div class="stocks">
+                                <input class="check-box" type="checkbox" id="SBUX-cb" name="SBUX-cb">
+                                <label for="SBUX-cb">SBUX</label>
+                            </div>
+                            <div class="stocks">
+                                <label for="other-cb">Other:</label>
+                                <input class="check-box" type="text" id="other-cb" name="other-cb"
+                                    placeholder="Stock Symbol">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="risk-level box">
+                    <h2>Risk Tolerance</h2>
+                    <div class="questionnaire">
+                        <label>In general, how would you and your friends describe you as a risk taker?</label>
+                        <textarea name="risk-q1" required></textarea>
+                    </div>
+                    <div class="questionnaire">
+                        <label>In terms of experience, how comfortable/confidence are you investing in stocks or
+                            bonds?</label>
+                        <textarea name="risk-q2"></textarea>
+                    </div>
+                    <div class="questionnaire">
+                        <label>If you had to invest $20,000, how would you like to allocate it? </label>
+                        <textarea name="risk-q3"></textarea>
+                    </div>
+                    <div class="questionnaire">
+                        <label>When you think of the word “risk” , what other words come to your mind?</label>
+                        <textarea name="risk-q4"></textarea>
+                    </div>
+                    <div class="questionnaire">
+                        <label>Your best friend says there is a chance to invest into a program that you have never hear
+                            of. He says the investment will double before the end of the year. What do you do?</label>
+                        <textarea name="risk-q5"></textarea>
+                    </div>
+                    <div class="questionnaire">
+                        <label>A stock you bought over a year ago has suddenly increased in value by over 40%. What do
+                            you do?</label>
+                        <textarea name="risk-q6"></textarea>
+                    </div>
+
+                </div>
+                <a href="index.html" class="back-btn">Cancel</a> 
+                <input class="button" type="submit" value="Submit" name="sub-btn">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <ul class="footer-list">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="service.html">Service</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Parachute @ 2022
+        </p>
+    </div>
+
+</body>
+
+</html>

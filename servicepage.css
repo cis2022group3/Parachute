@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    
+    
+}
+body{
+    background-color: rgb(250, 244, 236);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: antiquewhite;
+}
+
+.logo{
+    color:rgb(44, 43, 42);
+    font-size: 30px;
+}
+.nav-links{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    width:35%;
+}
+.nav-links li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background: rgb(44, 43, 42);
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links li:hover::after{
+    width:80%;
+}
+.nav-item{
+    color: rgb(44, 43, 42);
+    font-weight: 700;
+    font-size:14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position:relative;
+    padding: 8px 12px;
+}
+.home-area{
+    min-height: 40vh;
+    width:100%;
+    position:relative;
+    background-image: linear-gradient(rgba(245, 237, 204, 0.363),rgba(245, 237, 204, 0.363)),url(images/iph_financial-services.jpg);
+    background-size:cover;
+
+}
+.text-box{
+    width:100%;
+    color: rgba(82, 82, 82, 0.788);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    
+    
+}
+.text-box h1{
+    width:15%;
+    font-size: 62px;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 0.671);
+    padding:8px;
+    margin-left: 42.5%;
+}
+
+
+.main-content{
+    display:flex;
+    margin:80px;
+}
+.main-content .service-pic{
+    width:600px;
+}
+.main-content p{
+    padding-top:40px;
+    padding-left:40px;
+    font-size:20px;
+}
+.main-content .service-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+    border:2px solid rgba(82, 82, 82, 0.788);
+    padding: 20px 40px;
+    font-size:20px;
+    background:antiquewhite;
+    cursor:pointer;
+    position:relative;
+    left:60%;
+    top:100px;
+    bottom:200px;
+}
+.service-btn:hover{
+    border:1px solid #f44336;
+    background:#f44336;
+    color:#fff;
+   
+}
+.footer{
+    padding: 40px 0;
+    background-color: antiquewhite;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom:25px;
+    color:rgb(44, 43, 42)
+}
+.footer .social a{
+    font-size:24px;
+    color:inherit;
+    border: 2px solid white;
+    width:40px;
+    height:40px;
+    line-height:38px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity:0.95;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align:center;
+}  
+
+.footer ul li a{
+    color:inherit;
+    text-decoration: none;
+    opacity:0.8;
+}
+
+.footer ul li{
+    display:inline-block;
+    padding:0 15px;
+}
+.footer ul li a:hover{
+    opacity:1;
+}
+.footer .copyright{
+    margin-top:10px;
+    text-align:center;
+    font-size: 13px;
+}

@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: antiquewhite;
+}
+
+.logo{
+    color:rgb(44, 43, 42);
+    font-size: 30px;
+}
+.nav-links{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    width:35%;
+}
+.nav-links li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background: rgb(44, 43, 42);
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links li:hover::after{
+    width:80%;
+}
+.nav-item{
+    color: rgb(44, 43, 42);
+    font-weight: 700;
+    font-size:14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position:relative;
+    padding: 8px 12px;
+}
+.home-area{
+    min-height:100vh;
+    width:100%;
+    position:relative;
+    background-image: linear-gradient(rgba(245, 237, 204, 0.363),rgba(245, 237, 204, 0.363)),url(images/banner-pic1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.text-box{
+    width:60%;
+    color: rgba(82, 82, 82, 0.788);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    
+    
+}
+.text-box h1{
+    font-size: 62px;
+    background-color: rgba(250, 235, 215, 0.616);
+    padding:10px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 17px;
+    color:rgb(5, 5, 5);
+
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size:16px;
+    background:transparent;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    border:1px solid #f44336;
+    background:#f44336;
+    transition: 1s;
+}
+.section{
+    padding: 100px 0;
+}
+.service{
+    display:flex;
+}
+#our-service .service-text{
+    width: 60%;
+    margin-top: 10px;
+    padding:20px;
+}
+#our-service .service-text h2{
+    font-size: 40px;
+    padding:5px;
+    margin-bottom: 20px;
+}
+#our-service .service-text p{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#our-service .service-pic{
+    width:50%;
+
+}
+#our-service .service-pic img{
+    display:block;
+    max-width:100%;
+}
+.client-svc{
+    background-color: #fff;
+}
+.sec2-title{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+.objectives{
+    display:flex;
+}
+
+.objectives .three-objectives{
+    flex:25%;
+    padding:0px;
+    margin-top:100px;
+    margin-left: 0px;
+    margin-bottom:100px;
+    text-align: center;
+}
+.objectives .three-objectives p{
+    width:80%;
+    margin-top:8px;
+    margin-left:40px;
+}
+.objectives .three-objectives .upload, .NLP-1, .portfolio-1{
+    width:400px
+}
+
+.services .service-p{
+    width:50%;
+    margin-left:19%;
+    font-size: 30px;
+    position:relative;
+    top:30px;
+    padding-top:20px;
+}
+.services .service-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    border:2px solid antiquewhite;
+    padding: 20px 40px;
+    font-size:20px;
+    background:#f44336;
+    position:relative;
+    cursor:pointer;
+    left:60%;
+    bottom:50px;
+    margin-top:40px;
+}
+.service-btn:hover{
+    border:1px solid #f44336;
+    background:#f44336;
+   
+}
+body{
+    background-color: rgb(250, 244, 236);
+}
+.footer{
+    padding: 40px 0;
+    background-color: antiquewhite;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom:25px;
+    color:rgb(44, 43, 42)
+}
+.footer .social a{
+    font-size:24px;
+    color:inherit;
+    border: 2px solid white;
+    width:40px;
+    height:40px;
+    line-height:38px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity:0.95;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align:center;
+}  
+
+.footer ul li a{
+    color:inherit;
+    text-decoration: none;
+    opacity:0.8;
+}
+
+.footer ul li{
+    display:inline-block;
+    padding:0 15px;
+}
+.footer ul li a:hover{
+    opacity:1;
+}
+.footer .copyright{
+    margin-top:10px;
+    text-align:center;
+    font-size: 13px;
+}
