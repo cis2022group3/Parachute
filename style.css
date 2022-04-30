@@ -111,6 +111,39 @@ nav{
     cursor:pointer;
     left:65%;
 }
+.file-upload p{
+    margin-bottom: 20px;
+}
+.form_input{
+    /* display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px 18px;
+    border:2px solid grey;
+    background:#fff; 
+    border-radius:35px;
+    cursor:pointer;
+    position:relative; */
+}
+/* .form_label{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px 18px;
+    border:2px solid grey;
+    background:#fff; 
+    border-radius:35px;
+    cursor:pointer;
+    position:relative;
+    /* left:37.5%;  */
+    /* margin-top: 20px;
+} */ 
+.form_label i{
+    width:20px;
+}
+.form_text{
+    font-size: 20px;
+}
 .back-btn{
     display:inline-block;
     text-decoration:none;
