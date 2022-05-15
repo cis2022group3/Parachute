@@ -150,14 +150,16 @@ nav{
 .objectives .three-objectives .upload, .NLP-1, .portfolio-1{
     width:400px
 }
-
+.services{
+    display:flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 .services .service-p{
     width:50%;
     margin-left:19%;
     font-size: 30px;
-    position:relative;
-    top:30px;
-    padding-top:20px;
+    padding:10px;
 }
 .services .service-btn{
     display:inline-block;
@@ -169,9 +171,9 @@ nav{
     background:#f44336;
     position:relative;
     cursor:pointer;
-    left:60%;
+    /* left:60%;
     bottom:50px;
-    margin-top:40px;
+    margin-top:40px; */
 }
 .service-btn:hover{
     border:1px solid #f44336;
